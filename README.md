@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# 📝 UpTask - Gestor de Proyectos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para gestión de proyectos y tareas, desarrollada como proyecto de práctica para mi portfolio. Permite registrar usuarios, crear proyectos, agregar colaboradores y administrar tareas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React, Tailwind CSS, Axios, React Router DOM, TypeScript
+- **Backend:** Node.js, Express, MongoDB, Mongoose, JWT, TypeScript
+- **Autenticación:** JWT + Cookies
+- **Recuperación de contraseña:** con Mailtrap (solo en entorno de desarrollo)
 
-## Expanding the ESLint configuration
+## 🌐 Deploy
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend (Vercel):** [https://uptask-frontend.vercel.app](https://uptask-frontend.vercel.app)
+- **Backend API:** desplegado en Render, consumido internamente por el frontend
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+> ⚠️ El backend puede tardar unos segundos en iniciar debido al plan gratuito de Render.
+> ⚠️ La funcionalidad de recuperación de contraseña no funciona en producción ya que utiliza Mailtrap (servicio de testing de emails).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧪 Funcionalidades principales
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Registro e inicio de sesión
+- Confirmación de cuenta vía email (simulada)
+- Creación y edición de proyectos
+- Gestión de tareas por proyecto
+- Asignación de colaboradores
+- Protección de rutas privadas
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 👤 Cuentas de prueba
+
+> Como el sistema de confirmación de cuenta está desactivado (por estar basado en Mailtrap), podés usar estas cuentas para probar la app:
+
+### 🧑 Usuario normal
+- **Email:** correo1@gmail.com  
+- **Contraseña:** password
+
+### 👨‍💼 Usuario con proyectos (manager)
+- **Email:** correo2@gmail.com  
+- **Contraseña:** password
+
+---
+
+## 📁 Repositorios
+
+- [Repositorio Backend](https://github.com/Facu201202/UpTask_backend)
+- [Repositorio Frontend](https://github.com/Facu201202/UpTask_frontend)
