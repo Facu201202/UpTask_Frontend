@@ -30,11 +30,11 @@ Aplicación web para gestión de proyectos y tareas, desarrollada como proyecto 
 
 > Como el sistema de confirmación de cuenta está desactivado (por estar basado en Mailtrap), podés usar estas cuentas para probar la app:
 
-### 🧑 Usuario normal
+### 🧑 Usuario 1
 - **Email:** correo1@gmail.com  
 - **Contraseña:** password
 
-### 👨‍💼 Usuario con proyectos (manager)
+### 👨‍💼 Usuario 2
 - **Email:** correo2@gmail.com  
 - **Contraseña:** password
 
