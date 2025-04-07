@@ -11,7 +11,7 @@ Aplicación web para gestión de proyectos y tareas, desarrollada como proyecto 
 
 ## 🌐 Deploy
 
-- **Frontend (Vercel):** [https://uptask-frontend.vercel.app](https://uptask-frontend.vercel.app)
+- **Frontend (Vercel):** [https://up-task-frontend-psi-eight.vercel.app/](https://up-task-frontend-psi-eight.vercel.app/)
 - **Backend API:** desplegado en Render, consumido internamente por el frontend
 
 > ⚠️ El backend puede tardar unos segundos en iniciar debido al plan gratuito de Render.
